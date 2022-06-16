@@ -717,6 +717,8 @@ footer span a:hover{
     }
     .home .home-content a{
         font-size: 20px;
+        position: absolute;
+        bottom: 23%;
     }
     .services .serv-content .card{
         width: 100%;
