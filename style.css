@@ -449,7 +449,15 @@ section .container{
 .skills-content .right .c::before{
     width: 70%;
 }
-
+.skills-content .right .sqlserver::before{
+    width: 70%;
+}
+.skills-content .right .postgresql::before{
+    width: 80%;
+}
+.skills-content .right .linux::before{
+    width: 90%;
+}
 
 
 /* teams section styling */
