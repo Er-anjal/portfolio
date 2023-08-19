@@ -449,6 +449,9 @@ section .container{
 .skills-content .right .c::before{
     width: 70%;
 }
+.skills-content .right .mysql::before{
+    width: 70%;
+}
 .skills-content .right .sqlserver::before{
     width: 70%;
 }
