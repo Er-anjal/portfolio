@@ -772,3 +772,14 @@ footer span a:hover{
         bottom:23%;
     }
 }
+form{
+  filter: blur(1px); /* Adjust the blur radius as needed */
+  pointer-events: none;
+}
+.message{
+    padding-top: 10px;
+    text-align: left;
+    color: red;
+    font-weight: bold;
+    font-size: large;
+  }
