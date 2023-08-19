@@ -175,7 +175,7 @@ section .container{
     display: flex;
     align-items:center;
     justify-content: center;
-    height: 150px;
+    height: 160px;
     max-width: 400px;
     width: 100%;
      position: relative;
