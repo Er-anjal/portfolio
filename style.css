@@ -85,6 +85,7 @@ section .title::after{
     padding: 30px 0;
     font-family: 'Ubuntu', sans-serif;
     transition: all 0.3s ease;
+    overflow: hidden;
 }
 .navbar.sticky{
     padding: 15px 0;
@@ -99,19 +100,22 @@ section .title::after{
     height: 50px;
     width: 60px;
 }
-.navbar .logo a{
+.logo1 img:hover{
+   filter: drop-shadow(4.5px -1px 0px crimson);
+}
+/* .navbar .logo a{
     color: #fff;
     font-size: 50px;
     font-weight: 600;
-}
-.navbar .logo a span{
+} */
+/* .navbar .logo a span{
     color: crimson;
     transition: all 0.3s ease;
     font-size: 30px;
-}
-.navbar.sticky .logo a span{
+} */
+/* .navbar.sticky .logo a span{
     color: #fff;
-}
+} */
 .navbar .menu li{
     list-style: none;
     display: inline-block;
@@ -175,7 +179,7 @@ section .container{
     display: flex;
     align-items:center;
     justify-content: center;
-    height: 160px;
+    height: 140px;
     max-width: 400px;
     width: 100%;
      position: relative;
@@ -275,11 +279,12 @@ section .container{
     font-weight: 400;
     border-radius: 6px;
     border: 2px solid crimson;
-    transition: all 0.3s ease;
+    transition: all 0.5s ease;
 }
 .home .home-content a:hover{
     color: crimson;
     background: none;
+    box-shadow: 5px 5px 0px crimson;
 }
 
 /* about section styling */
@@ -288,12 +293,18 @@ section .container{
 }
 .about .about-content .left{
     width: 45%;
+    overflow: hidden;
 }
 .about .about-content .left img{
     height: 400px;
     width: 400px;
     object-fit: cover;
     border-radius: 6px;
+    transition: all ease 1s;
+    
+}
+.about .about-content .left img:hover{
+    scale: 1.2;
 }
 .about .about-content .right{
     width: 55%;
@@ -324,6 +335,7 @@ section .container{
 .about .about-content .right a:hover{
     color: crimson;
     background: none;
+    box-shadow: 5px 5px 0px crimson;
 }
 
 /* services section styling */
@@ -351,6 +363,7 @@ section .container{
 }
 .services .serv-content .card:hover{
     background: crimson;
+    
 }
 .services .serv-content .card .box{
     transition: all 0.3s ease;
@@ -403,6 +416,7 @@ section .container{
 .skills .skills-content .left a:hover{
     color: crimson;
     background: none;
+    box-shadow: 5px 5px 0px crimson;
 }
 .skills .skills-content .right .bars{
     margin-bottom: 15px;
@@ -620,6 +634,7 @@ section .container{
 .right form .button-area button:hover{
   color: crimson;
   background: none;
+  box-shadow: 5px 5px 0px crimson;
 }
 /* footer section styling */
 footer{
