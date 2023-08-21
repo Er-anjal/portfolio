@@ -99,9 +99,10 @@ section .title::after{
 .navbar .logo1 img{
     height: 50px;
     width: 60px;
+    transition: all ease 0.3s;
 }
 .logo1 img:hover{
-   filter: drop-shadow(4.5px -1px 0px crimson);
+   filter: drop-shadow(4.5px -1.1px 0.5px crimson);
 }
 /* .navbar .logo a{
     color: #fff;
@@ -260,6 +261,12 @@ section .container{
     font-size: 75px;
     font-weight: 600;
     margin-left: -3px;
+    background-size: cover;
+    background-position: center;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: url(https://img.freepik.com/premium-photo/abstract-blue-background_196038-11213.jpg?w=740);
 }
 .home .home-content .text-3{
     font-size: 40px;
