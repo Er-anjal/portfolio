@@ -32,7 +32,7 @@ section{
 }
 .max-width{
     max-width: 1300px;
-    padding: 0 80px;
+    padding: 0 30px;
     margin: auto;
 }
 .about, .services, .skills, .teams, .contact, footer{
@@ -44,8 +44,9 @@ section{
 .contact .contact-content{
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
+    align-content: space-around;
     justify-content: space-between;
+    align-items: center;
 }
 section .title{
     position: relative;
@@ -82,13 +83,13 @@ section .title::after{
     position: fixed;
     width: 100%;
     z-index: 999;
-    padding: 30px 0;
+    padding: 20px 0;
     font-family: 'Ubuntu', sans-serif;
     transition: all 0.3s ease;
     overflow: hidden;
 }
 .navbar.sticky{
-    padding: 15px 0;
+    padding: 5px 0;
     background: crimson;
 }
 .navbar .max-width{
@@ -183,9 +184,9 @@ section .container{
     height: 140px;
     max-width: 400px;
     width: 100%;
-     position: relative;
-    right: 160px;
-    top:300px;
+    position: absolute;
+    left: 470px;
+    top: 487px;
   }
   
   section .container .time{
@@ -399,6 +400,40 @@ section .container{
 }
 .skills .skills-content .column{
     width: calc(50% - 30px);
+}
+.skills .skills-content .left svg{
+    width: 440px;
+    height: 340px;
+}
+
+.skills .skills-content .left svg .tree{
+    animation: mytree 10s cubic-bezier(1,-0.51, 0, 1.06) infinite ;
+    transform-origin: bottom;
+    transform-box: fill-box;
+    animation-fill-mode: forwards;
+
+}
+@keyframes mytree{
+    form{ 
+        scale: 0.4;
+    }to{
+        translate: 1.8 0px;
+        scale: 1.8;
+        fill: lightcoral;
+    }
+}
+.skills .skills-content .left svg #cv{
+    animation: mycv 7s linear infinite  ;
+    
+}
+@keyframes mycv{
+    form{ 
+        scale: 1;
+    }to{
+        
+        scale: 0.5;
+        fill: lightcoral;
+    }
 }
 .skills .skills-content .left .text{
     font-size: 20px;
