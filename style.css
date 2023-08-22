@@ -833,6 +833,31 @@ footer span a:hover{
         position: absolute;
         bottom:23%;
     }
+    section .container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 140px;
+        max-width: 400px;
+        width: 100%;
+        position: absolute;
+        left: 49px;
+        top: 403px;
+      }
+    
+}
+@media (width: 923px){
+    section .container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 140px;
+        max-width: 400px;
+        width: 100%;
+        position: absolute;
+        left: 33px;
+        top: 424px;
+      }
 }
 form{
   filter: blur(1px); /* Adjust the blur radius as needed */
