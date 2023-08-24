@@ -86,7 +86,7 @@ html,body{
 .bubble:hover{
     background-color: rgb(2, 61, 17);
 }
-@media (max-width: 500px) {
+@media (max-width: 450px) {
 
     .box{
         font-size: 25px;
@@ -109,7 +109,10 @@ html,body{
     #pbtm h1{
         color: rgb(116, 21, 21);
         font-size: 50px;
-
-}
+    }
+    #pannel{
+        width: 90%;
+        height: 90%;
+    }
 
 }
