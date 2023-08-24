@@ -1,5 +1,5 @@
 
-var timer = 60;
+var timer = 6;
 var score = 0;
 var hitrn ;
 
@@ -39,7 +39,7 @@ document.querySelector("#pbtm").innerHTML = clutter;
 }
 function runTimer(){
     var timerint = setInterval(function () {
-        if(timer > 0){
+        if(timer >= 1){
             timer--;
             document.querySelector("#timerVal").textContent = timer;
         }
