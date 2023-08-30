@@ -1,5 +1,5 @@
 
-var timer = 6;
+var timer = 60;
 var score = 0;
 var hitrn ;
 
@@ -25,15 +25,16 @@ function getNewHit(){
 }
 
 function makeBubble(){
-    // Initialize an empty string to store the HTML content
 var clutter = "";
-// Loop from 1 to 30 (inclusive)
-for (var i = 1; i <= 133; i++) {
-    // Append a <div> element with class "bubble" and containing the text "5"
-    clutter += `<div class="bubble">${Math.floor(Math.random()*10)}</div>`;
-    
-}
-// Set the inner HTML of an element with the id "pbtm" to the generated clutter
+if(`@media (min-width: 450px)`){
+    for (var i = 1; i <= 40; i++) {
+        clutter += `<div class="bubble">${Math.floor(Math.random()*10)}</div>`;   
+    }
+    }else{
+        for (var i = 1; i <= 133; i++) {
+            clutter += `<div class="bubble">${Math.floor(Math.random()*10)}</div>`;   
+        }
+    }
 document.querySelector("#pbtm").innerHTML = clutter;
 
 }
@@ -47,6 +48,7 @@ function runTimer(){
             clearInterval(timerint);
             document.querySelector("#pbtm").innerHTML = `<h1>Score ${score}</h1>`;
             document.querySelector("#hitVal").textContent = 0;
+            document.querySelector("#pbtm").style.pointerEvents = "none";
         }
     },1000);
 }
@@ -62,3 +64,4 @@ function decreaseScore(){
 getNewHit();
 runTimer();
 makeBubble();
+

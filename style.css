@@ -48,6 +48,7 @@ section{
 .contact .contact-content{
     display: flex;
     flex-wrap: wrap;
+    gap: 0px;
     align-content: space-around;
     justify-content: space-between;
     align-items: center;
@@ -188,8 +189,8 @@ section .container{
     height: 140px;
     max-width: 400px;
     width: 100%;
-    position: absolute;
-    left: 470px;
+    position: relative;
+    right: 470px;
     top: 487px;
   }
   
@@ -711,10 +712,6 @@ footer span a:hover{
     .max-width{
         padding: 0 50px;
     }
-    section .container{
-        display: none;
-      }
-    
 }
 @media (max-width: 947px){
     .menu-btn{
@@ -779,10 +776,6 @@ footer span a:hover{
         width: 100%;
         margin-bottom: 35px;
     }
-    section .container{
-        display: none;
-      }
-    
 }
 
 @media (max-width: 690px) {
@@ -794,35 +787,21 @@ footer span a:hover{
     }
     .home .home-content .text-3{
         font-size: 32px;
-        height: 30px;
     }
     .home .home-content a{
         font-size: 20px;
-        position: absolute;
-        bottom: 23%;
-
     }
     .services .serv-content .card{
         width: 100%;
     }
-    section .container{
-        display: none;
-      }
-    
 }
 
 @media (max-width: 500px) {
-
-    .home .home-content .hire{
-        position: relative;
-        margin-top: 160px;
-    }
     .home .home-content .text-2{
         font-size: 50px;
     }
     .home .home-content .text-3{
         font-size: 27px;
-        height: 30px;
     }
     .about .about-content .right .text,
     .skills .skills-content .left .text{
@@ -846,14 +825,6 @@ footer span a:hover{
         font-size: 23px;
         line-height: 38px;
     }
-    .home .home-content a{
-        position: absolute;
-        bottom:23%;
-    }
-    section .container{
-        display: none;
-      }
-    
 }
 
 form{
