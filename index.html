@@ -58,7 +58,7 @@
                 <a class="hire" href="#contact">Hire me</a>
             </div>
             <!-- *********************time***************** -->
-
+            <!--
             <div class="container">
                 <div class="icons">
 
@@ -87,6 +87,7 @@
                     </div>
                 </div>
             </div>
+            -->
             <!-- ************************************************** -->
 
 
@@ -462,28 +463,28 @@
 
         }, 1000); // 1000 milliseconds = 1s
 
-        
-            // Calculate age function
-            function calculateAge(birthDate) {
-                var today = new Date();
-                var birthDate = new Date(birthDate);
-                var age = today.getFullYear() - birthDate.getFullYear();
-                var m = today.getMonth() - birthDate.getMonth();
-                if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
-                    age--;
-                }
-                return age;
+
+        // Calculate age function
+        function calculateAge(birthDate) {
+            var today = new Date();
+            var birthDate = new Date(birthDate);
+            var age = today.getFullYear() - birthDate.getFullYear();
+            var m = today.getMonth() - birthDate.getMonth();
+            if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
+                age--;
             }
-        
-            // Set birthdate
-            var birthDate = new Date("1999-05-16"); 
-        
-            // Calculate age
-            var age = calculateAge(birthDate);
-        
-            // Update the age in the HTML
-            document.getElementById("age").textContent = age;
-        
+            return age;
+        }
+
+        // Set birthdate
+        var birthDate = new Date("1999-05-16");
+
+        // Calculate age
+        var age = calculateAge(birthDate);
+
+        // Update the age in the HTML
+        document.getElementById("age").textContent = age;
+
 
     </script>
 </body>
