@@ -73,3 +73,23 @@ $(document).ready(function()
         }
     });
 });
+
+function calculateAge(birthDate) {
+    var today = new Date();
+    var birthDate = new Date(birthDate);
+    var age = today.getFullYear() - birthDate.getFullYear();
+    var m = today.getMonth() - birthDate.getMonth();
+    if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
+        age--;
+    }
+    return age;
+}
+
+// Set Anjal's birthdate
+var birthDate = new Date("1999-05-16"); 
+
+// Calculate Anjal's age
+var age = calculateAge(birthDate);
+
+// Update the age in the HTML
+document.getElementById("age").textContent = age;
