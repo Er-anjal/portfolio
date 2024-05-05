@@ -103,9 +103,9 @@
                 </div>
                 <div class="column right">
                     <div class="text">I'm Anjal and I'm a <span class="typing-2"></span></div>
-                    <p>I'm Anjal Pandey , a <span id="age"></span>-year-old nepalese Freelance Full Stack developer. 
-                        I'ma weird guy wholikes making weird things with web technologies. I like to resolve design 
-                        problems, create a smart user interface and imagine useful interaction, developing rich web 
+                    <p>I'm Anjal Pandey , a <span id="age"></span>-year-old nepalese Freelance Full Stack developer.
+                        I'ma weird guy wholikes making weird things with web technologies. I like to resolve design
+                        problems, create a smart user interface and imagine useful interaction, developing rich web
                         experiences & web applications</p>
                     <a href="#">Download CV</a>
                 </div>
@@ -461,6 +461,29 @@
             document.querySelector(".am_pm").innerText = d;
 
         }, 1000); // 1000 milliseconds = 1s
+
+        
+            // Calculate age function
+            function calculateAge(birthDate) {
+                var today = new Date();
+                var birthDate = new Date(birthDate);
+                var age = today.getFullYear() - birthDate.getFullYear();
+                var m = today.getMonth() - birthDate.getMonth();
+                if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
+                    age--;
+                }
+                return age;
+            }
+        
+            // Set Anjal's birthdate
+            var birthDate = new Date("1999-05-16"); // Change this to Anjal's actual birthdate
+        
+            // Calculate Anjal's age
+            var age = calculateAge(birthDate);
+        
+            // Update the age in the HTML
+            document.getElementById("age").textContent = age;
+        
 
     </script>
 </body>
